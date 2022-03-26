@@ -7,6 +7,10 @@
 
 import UIKit
 
+enum CurrentLight {
+    case red, yellow, green
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
