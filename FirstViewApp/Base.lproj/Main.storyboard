@@ -43,11 +43,10 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIS-5B-XdZ">
-                                <rect key="frame" x="122" y="593" width="170" height="69"/>
+                                <rect key="frame" x="132" y="602" width="150" height="60"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="1xu-Ad-UBZ"/>
-                                    <constraint firstAttribute="height" constant="69" id="LKa-9m-HIs"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="1xu-Ad-UBZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
@@ -63,7 +62,7 @@
                         <constraints>
                             <constraint firstItem="ZNs-bI-kE9" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.506696" id="Apy-F1-2E5"/>
                             <constraint firstItem="qIS-5B-XdZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Fzd-sm-xYz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qIS-5B-XdZ" secondAttribute="bottom" constant="200" id="O4p-at-FjN"/>
+                            <constraint firstItem="qIS-5B-XdZ" firstAttribute="top" secondItem="ZNs-bI-kE9" secondAttribute="bottom" constant="78" id="P44-EO-6GG"/>
                             <constraint firstItem="ZNs-bI-kE9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="e25-6V-vCa"/>
                             <constraint firstItem="ZNs-bI-kE9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tme-F4-LXL"/>
                         </constraints>

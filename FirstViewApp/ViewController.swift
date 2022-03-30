@@ -28,12 +28,22 @@ class ViewController: UIViewController {
 
         startButton.layer.cornerRadius = 10
         
+        let color1 = UIColor(red: 253 / 255, green: 175 / 255, blue: 61 / 255 , alpha: 1.0).cgColor
+        let color2 = UIColor(red: 153 / 255, green: 46 / 255, blue: 71 / 255, alpha: 1.0).cgColor
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.view.bounds
+        gradientLayer.colors = [color1, color2]
+        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
+        gradientLayer.endPoint = CGPoint(x: 0.0, y: 1.0)
+        self.view.layer.insertSublayer(gradientLayer, at: 0)
+        
         redLight.alpha = lightIsOff
         yellowLight.alpha = lightIsOff
         greenLight.alpha = lightIsOff
     }
     
-    override func viewDidLayoutSubviews() {
+   override func viewDidLayoutSubviews() {
         redLight.layer.cornerRadius = redLight.frame.width / 2
         yellowLight.layer.cornerRadius = yellowLight.frame.width / 2
         greenLight.layer.cornerRadius = greenLight.frame.width / 2
